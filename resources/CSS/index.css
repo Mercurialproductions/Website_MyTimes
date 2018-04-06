@@ -45,13 +45,13 @@
   height:60px;
 }
 
-/*  Styling for the main area*/
+/*  Styling for the main area columns*/
 
 #main_container {
   width:100%;
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   position:relative;
   padding-top: 80px;
@@ -60,17 +60,87 @@
 .column.large {
   width: 630px;
   border: 3px solid black;
-  flex-grow:1;
+
 }
 
 .column.medium {
   width: 300px;
   border: 3px solid black;
-  flex-grow:1
+
 }
 
 .column.small {
   width: 240px;
   border: 3px solid black;
-  flex-grow: 1:
+
+}
+
+#row_one_single {
+  border: 3px solid black;
+}
+
+/* styling for the main story */
+
+#img_main {
+  background-image:url('../img/img-story-main.png');
+  background-repeat: no-repeat;
+  height:300px;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  padding: 0px 40px;
+}
+
+.image_text {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+#img_main .image_text {
+  font-size: 40px;
+}
+
+.story_text{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  padding-top:20px;
+}
+
+/*  */
+
+#row_one_double {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*  styling for story two in the first column*/
+
+#img_story_two {
+  background-image: url('../img/img-story-2.png');
+  background-repeat: no-repeat;
+  height:300px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0 40px;
+}
+
+/*  styling for story three in the first column*/
+
+#img_story_three {
+  background-image: url('../img/img-story-3.png');
+  background-repeat:no-repeat;
+  height:300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0 40px;
 }
