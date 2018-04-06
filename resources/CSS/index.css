@@ -63,24 +63,29 @@
 
 .column.large {
   width: 630px;
-  border: 3px solid black;
+
 
 }
 
 .column.medium {
   width: 300px;
-  border: 3px solid black;
+
 
 }
 
 .column.small {
   width: 240px;
-  border: 3px solid black;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+
 
 }
 
 #row_one_single {
-  border: 3px solid black;
+
 }
 
 /* styling for the main story */
@@ -164,10 +169,11 @@
 
 /* styling for column 3 bites */
 
-#img_bites {
-  background-image: url('../img/img-news-bite.png');
-  background-repeat: no-repeat;
-  height:300px;
+#img_bites img {
+  /* background-image: url('../img/img-news-bite.png'); */
+  /* background-repeat: no-repeat; */
+  /* height:300px; */
+  /* z-index: 5; */
 }
 
 #title_bites {
@@ -180,16 +186,47 @@
 #bites {
   display:flex;
   flex-direction:column;
-  padding-left:20px;
-  align-items: center;
-  background-color:lightgrey;
+  align-items: flex-start;
+  justify-content:flex-start;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  width:200px;
 }
 
 #bites span {
   border-bottom: 1px solid black;
-  text-align:left;
+  width:100%;
+
 }
 
-.bites_text p {
- text-align:left;
+#bites span p {
+  padding-left:20px;
 }
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;}
+
+  /*  styles for footer*/
+
+.footer {
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    width:100%;
+    Height:500px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+  }
+
+.footer_logo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  }
