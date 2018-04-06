@@ -51,7 +51,7 @@
 
 /*  Styling for the main area columns*/
 
-#main_container {
+.main_container {
   width:100%;
   display:flex;
   flex-direction: row;
@@ -160,4 +160,36 @@
   justify-content: center;
   align-items: center;
   padding:0 40px;
+}
+
+/* styling for column 3 bites */
+
+#img_bites {
+  background-image: url('../img/img-news-bite.png');
+  background-repeat: no-repeat;
+  height:300px;
+}
+
+#title_bites {
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+}
+
+#bites {
+  display:flex;
+  flex-direction:column;
+  padding-left:20px;
+  align-items: center;
+  background-color:lightgrey;
+}
+
+#bites span {
+  border-bottom: 1px solid black;
+  text-align:left;
+}
+
+.bites_text p {
+ text-align:left;
 }
