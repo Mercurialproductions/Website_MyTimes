@@ -8,7 +8,7 @@ html, body, {
 
 h2 {
 font-weight:bold;
-font-size: 1.5em;
+font-size: 30px;
 
 
 }
@@ -73,7 +73,8 @@ font-size: 1.5em;
   justify-content: space-around;
   align-items: flex-start;
   position:relative;
-  padding-top: 80px;
+  padding-top: 100px;
+  flex-wrap: wrap;
 }
 
 .column.large {
