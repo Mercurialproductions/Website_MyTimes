@@ -13,10 +13,13 @@
   font-size: 14px;
   font-weight: bold;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   background-color: white;
 }
 
+#main_container {
+  z-index: 5;
+}
 
 #header_nav_container {
   padding-right:40px;
@@ -140,6 +143,19 @@
   background-repeat:no-repeat;
   height:300px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding:0 40px;
+}
+
+/* styling for second column */
+
+#img_story_one {
+  background-image:url('../img/img-story-1.png');
+  background-repeat: no-repeat;
+  height:300px;
+  display:flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
